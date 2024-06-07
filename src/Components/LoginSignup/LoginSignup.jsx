@@ -17,7 +17,9 @@ const LoginSignup = () => {
 
     return (
         <div className={`wrapper${action}`}>
+            
             <div className='form-box login'>
+            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} className="logo"  />
                 <form action=''>
                     <h1>Hi, Welcome Back!</h1>
                     <h2>Sign in to your account to continue</h2>
@@ -51,6 +53,7 @@ const LoginSignup = () => {
 
 
             <div className='form-box register'>
+            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} className="logo"  />
                 <form action=''>
                     <h1>Create an account</h1>
                     <h2>Fill in the form today to create an account</h2>
@@ -61,15 +64,10 @@ const LoginSignup = () => {
 
 
                     </div>
+                   
                     <div className='input-box'>
                         <input type='text'
-                            placeholder='Enter your email address' required />
-                        <FaUser className='icon' />
-
-                    </div>
-                    <div className='input-box'>
-                        <input type='text'
-                            placeholder='Enter your email address' required />
+                            placeholder='Enter your Full Name' required />
                         <FaUser className='icon' />
 
 
@@ -101,8 +99,6 @@ const LoginSignup = () => {
                     </div>
                 </form>
             </div>
-
-
 
         </div>
 

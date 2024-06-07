@@ -11,11 +11,19 @@
     overflow: hidden;
     transition: height .2s ease;
 }
+.input-box{
+    height: 10%;
+    width: 10;
+}
+.form-box.register{
+    height: 102%;
+}
+
 
 
 .wrapper.active {
     height: 700px;
-    width: 600;
+    width: 88%;
 }
 
 .wrapper .form-box {
@@ -28,10 +36,17 @@
     translate: -400px;
 }
 
+.logo{
+    width: 120px;
+    margin-left: 40%;
+    
+}
+
 .wrapper .form-box.register {
     position: absolute;
     translate: 400px;
 }
+
 .wrapper.active .form-box.register {
     transition: translate .18s ease;
     translate: 0;
@@ -68,7 +83,7 @@ form .input-box {
     border: 2px solid rgba(255, 255, 255, .1);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff; /* Black color */
+    color: black;
 }
 
 .input-box input::placeholder {
